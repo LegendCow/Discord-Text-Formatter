@@ -11,6 +11,11 @@ $(document).ready(function(){
   $('#input').mousedown(function() {
     updateValues();
   });
+  $('.options').click(function() {
+    setTimeout(function() {
+    updateValues();
+    }, 100);
+  });
   $("#input").bind('paste', function() {
     setTimeout(function() {
     updateValues();
