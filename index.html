@@ -22,6 +22,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="myScript.js"></script>
     <script src="copyText.js"></script>
+    <script src="options.js"></script>
   </head>
   <body class="w3-theme-l4">
 
@@ -46,17 +47,19 @@
     <button id="copyButton" class="w3-theme-l1 w3-hover-theme" onclick="copyText()">Copy Text</button>
     <textarea id="preview" class="output" placeholder="Type Something..." spellcheck="false" readonly></textarea>
   </div>
-  <div class="options">
-      <input type="checkbox" id="italic" value="italic">
-      <label for="italic">Italic</label><br>
-      <input type="checkbox" id="bold" value="bold">
-      <label for="bold">Bold</label><br>
-      <input type="checkbox" id="underline" value="underline">
-      <label for="underline">Underline</label><br>
-      <input type="checkbox" id="strikethrough" value="strikethrough">
-      <label for="strikethrough">Strikethrough</label><br>
-      <input type="checkbox" id="spoiler" value="spoiler">
-      <label for="spoiler">Spoiler</label><br>
+  <div class="options unselectable">
+    <form>
+    <input onclick="option()" type="checkbox" id="italic" value="italic">
+    <label for="italic">Italic</label><br>
+    <input onclick="option()" type="checkbox" id="bold" value="bold">
+    <label for="bold">Bold</label><br>
+    <input onclick="option()" type="checkbox" id="underline" value="underline">
+    <label for="underline">Underline</label><br>
+    <input onclick="option()" type="checkbox" id="strikethrough" value="strikethrough">
+    <label for="strikethrough">Strikethrough</label><br>
+    <input onclick="option()" type="checkbox" id="spoiler" value="spoiler">
+    <label for="spoiler">Spoiler</label><br>
+  </form>
   </div>
   </body>
   </body>
