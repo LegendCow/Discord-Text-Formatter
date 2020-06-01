@@ -10,7 +10,7 @@ header img {
   height: 7em;
 }
 textarea.input {
-  margin: 16px;
+  margin: 1.5%;
   padding: 16px;
   width: 40%;
   height: 75vh;
@@ -31,7 +31,7 @@ textarea.input {
 textarea.output {
   width: 100%;
   padding: 16px;
-  height: 35vh;
+  height: 43%;
   font-size: 24px;
   font-family: Cabin, sans-serif;
   line-height: 1.4;
@@ -50,11 +50,32 @@ div.output {
   width: 40%;
   float: right;
   height: 75vh;
-  margin: 16px;
+  margin: 1.5%;
+}
+.options {
+  width: 14%;
+  height: 75vh;
+  margin: 1.5% 0;
+  float: right;
 }
 #output {
-  margin-bottom: 2.5vw;
+  margin-bottom: 2.5%;
 }
 #preview {
-  margin-top: 2.5vw;
+  margin-top: 2.5%;
+}
+#copyButton {
+  height: 9%;
+  width: 50%;
+  border: none;
+  outline: none;
+  margin: 0 25%;
+  cursor: pointer;
+  border-radius: 50px;
+  font-size: 18px;
+}
+#copyButton:active {
+  height: 8.5%;
+  width: 49.5%;
+  margin: 0.25% 25.25%;
 }
