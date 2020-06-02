@@ -28,7 +28,7 @@ textarea.input {
 
   resize: none;
 }
-textarea.output {
+.output {
   width: 100%;
   padding: 16px;
   height: 43%;
@@ -39,6 +39,7 @@ textarea.output {
   border: none;
   overflow: auto;
   outline: none;
+  background-color: #fff;
 
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
@@ -46,7 +47,7 @@ textarea.output {
 
   resize: none;
 }
-div.output {
+div.outputBox {
   width: 40%;
   float: right;
   height: 75vh;
@@ -68,6 +69,10 @@ div.output {
 #preview {
   margin-top: 2.5%;
 }
+#previewText {
+  word-wrap: break-word;
+  display: inline;
+}
 #copyButton {
   height: 9%;
   width: 50%;
@@ -80,8 +85,26 @@ div.output {
 }
 #copyButton:active {
   height: 8.5%;
-  width: 49.5%;
-  margin: 0.25% 25.25%;
+  width: 49%;
+  margin: 0.25% 25.5%;
+}
+#clearButton {
+  height: 10%;
+  width: 72%;
+  border: none;
+  outline: none;
+  margin: 0 14%;
+  cursor: pointer;
+  border-radius: 50px;
+  font-size: 18px;
+  position: relative;
+  top: 5%;
+}
+#clearButton:active {
+  height: 8.5%;
+  width: 68%;
+  margin: 0.75% 16%;
+  top: 5.5%;
 }
 .unselectable {
   -webkit-touch-callout: none;
